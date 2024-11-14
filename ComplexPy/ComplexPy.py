@@ -38,25 +38,6 @@ class complexNumber():
         else:
             return f"{self.real}"
 
-    def tetrate(self, a, b):
-        """
-        Tetration: Repeated exponentiation (a ↑↑ b)
-
-        Arguments:
-        a -- The base value.
-        b -- The height of the tetration.
-
-        Example:
-        ```
-        result = num.tetrate(2, 3)
-        print(result)  # Will print 16 (2^(2^2))
-        ```
-        """
-        result = a
-        for _ in range(b - 1):
-            result = self.exp2(a, result)  # Using efficient exponentiation
-        return result
-
     def add(self, num):
         """
         Adds two complex numbers.
